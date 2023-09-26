@@ -1,4 +1,6 @@
-﻿# WebPrint
+# 修复pdf和图片无法打印，更新pdf水平、垂直双面打印
+ 
+ # WebPrint
 
 [Windows 在线共享打印机](https://github.com/NewFuture/WebPrint)
 
