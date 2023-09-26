@@ -1,4 +1,4 @@
-# 修复pdf和图片无法打印，更新pdf水平、垂直双面打印
+# 修复pdf和图片无法打印，新增pdf水平、垂直双面打印
  
  # WebPrint
 
@@ -30,16 +30,16 @@ Windows 系统包含IIS功能,但默认关闭，需要手动打开。
 
 ### II. 下载代码
 
- 1. 下载[代码](https://github.com/NewFuture/WebPrint/archive/master.zip) 
+ 1. 下载代码
  2. 解压**替换**掉`C:\inetpub\wwwroot`下内容,(确保README.md同级文件在此根目录下)
  3. 浏览器打开 `localhost` 可以看到上传界面
-
+ 注意！！！查看bin目录下的SumatraPDF.exe是否为6MB+,如果为1kb，请重新[下载SumatraPDF.exe](https://ghproxy.com/https://github.com/NewFuture/WebPrint/blob/master/bin/SumatraPDF.exe)替换掉原文件
 ### III. 配置
 
 1. 修改临时文件夹权限`file`，添加`IIS_IUSRS`的写入权限
 2. 修改IIS对应应用程序池权限为管理员权限（`IIS管理器` > `对应的应用程序池` > `高级设置` > `进程模型` > `标识` > `改为管理员账户`）
 3. 若为x64系统，在bin目录下替换[SumatraPDF的64位版本](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
-4. 设置打印密码,修改[Web.config](https://github.com/NewFuture/WebPrint/blob/master/Web.config#L5)设置打印密码
+4. 设置打印密码,修改Web.config设置打印密码
 5. 设置系统默认打印机即配置完成
 6. 局域网其他电脑或手机在浏览器访问你的主机`IP`,`主机名`或`域名`可打印则部署成功
 
