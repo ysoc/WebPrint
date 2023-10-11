@@ -1,3 +1,5 @@
+# 2023.10.11实现了ppt/word/excel/visio后台自动转换成pdf再打印，避免了word打印乱码，有时间再上传代码
+
 # 修复pdf和图片无法打印，新增pdf水平、垂直双面打印
  
  # WebPrint
